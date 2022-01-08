@@ -11,6 +11,9 @@
             <a href="/">home</a>
           </li>
           <li>
+            <g-link to="/hire/developers">find talent</g-link>
+          </li>
+          <li>
             <a href="#one">about</a>
           </li>
           <li>
@@ -48,7 +51,7 @@
         </li>
         <li>
           <a
-            href="https://www.meetup.com/grammerhub"
+            href="http://bit.ly/grammerhub-slack"
             target="”_blank”"
             class="icon brands alt fa-slack"
           >
@@ -57,7 +60,7 @@
         </li>
         <li>
           <a
-            href="http://bit.ly/grammerhub-slack"
+            href="https://www.meetup.com/grammerhub"
             target="”_blank”"
             class="icon brands alt fa-meetup"
           >

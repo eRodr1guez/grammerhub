@@ -16,7 +16,7 @@
           </p>
         </header>
         <span class="image">
-          <img src="../assets/images/pic01.jpg" alt />
+          <img src="@/assets/images/pic01.jpg" alt />
         </span>
       </div>
       <a href="#one" class="goto-next scrolly">Next</a>
@@ -25,7 +25,7 @@
     <!-- One -->
     <section id="one" class="spotlight style1 bottom inactive">
       <span class="image fit main">
-        <img src="../assets/images/pic02.jpg" alt />
+        <img src="@/assets/images/pic02.jpg" />
       </span>
       <div class="content">
         <div class="container">
@@ -66,12 +66,11 @@
     <!-- Two -->
     <section id="two" class="spotlight style2 right inactive">
       <span class="image fit main">
-        <img src="../assets/images/pic03.jpg" alt />
+        <img src="@/assets/images/pic03.jpg" />
       </span>
       <div class="content">
         <header>
           <h2>How it works</h2>
-          <!-- <p>Nunc commodo accumsan eget id nisi eu col volutpat magna</p> -->
         </header>
         <p>
           - 6:30 pm EST: We open our general video conference call (Intros, Q&A, Show-and-Tell, etc.)
@@ -90,7 +89,7 @@
     <!-- Three -->
     <section id="three" class="spotlight style3 left inactive">
       <span class="image fit main bottom">
-        <img src="../assets/images/pic04.jpg" alt />
+        <img src="@/assets/images/pic04.jpg" alt />
       </span>
       <div class="content">
         <header>
@@ -146,12 +145,12 @@ export default {
   },
   mounted() {
     const sections = document.querySelectorAll("section.spotlight")
-    const sectionObserver = new IntersectionObserver (
+    const sectionObserver = new IntersectionObserver(
       handleIntersection,
       {
-      root: null, // relative to document viewport 
-      rootMargin: '0px', // margin around root. Values are similar to css property. Unitless values not allowed
-      threshold: 0.50 // visible amount of item shown in relation to root
+        root: null, // relative to document viewport 
+        rootMargin: '0px', // margin around root. Values are similar to css property. Unitless values not allowed
+        threshold: 0.50 // visible amount of item shown in relation to root
       })
 
     sections.forEach(section => {
