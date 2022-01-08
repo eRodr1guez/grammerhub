@@ -128,11 +128,6 @@
         </form>
       </div>
     </section>
-
-    <!-- <div v-for="profile in profiles" :key="profile.id">
-      <h4>{{ profile.name }}</h4>
-      <a :href="`/profile/${profile.id}`">view profile</a>
-    </div>-->
   </Layout>
 </template>
 
