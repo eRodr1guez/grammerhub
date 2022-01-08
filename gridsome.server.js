@@ -8,7 +8,7 @@
 module.exports = function (api) {
   api.loadSource(({ addCollection }) => {
     // Use the Data Store API here: https://gridsome.org/docs/data-store-api/
-    const { profiles } = require('./src/data/developers.json');
+    const profiles = require('./src/data/developers.json');
 
     const collection = addCollection({
       typeName: 'Profiles'
@@ -21,31 +21,31 @@ module.exports = function (api) {
 
   api.createPages(async ({ graphql, createPage }) => {
     // Use the Pages API here: https://gridsome.org/docs/pages-api/
-    const { data } = await graphql(`{
-      allProfiles {
-        edges{
-          node {
-            id,
-            name,
-            status,
-            social {
-              name,
-              url
-            }
-          } 
-        }
-      }
-    }`)
+    // const { data } = await graphql(`{
+    //   allProfiles {
+    //     edges{
+    //       node {
+    //         id,
+    //         name,
+    //         status,
+    //         social {
+    //           name,
+    //           url
+    //         }
+    //       } 
+    //     }
+    //   }
+    // }`)
 
-    data.allProfiles.edges.forEach(node => {
-      const { node: profile } = node
-      createPage({
-        path: `/profile/${profile.id}`,
-        component: './src/templates/Profile.vue',
-        context: {
-          profile
-        }
-      })
-    })
+    // data.allProfiles.edges.forEach(node => {
+    //   const { node: profile } = node
+    //   createPage({
+    //     path: `/profile/${profile.id}`,
+    //     component: './src/templates/Profile.vue',
+    //     context: {
+    //       profile
+    //     }
+    //   })
+    // })
   })
 }
