@@ -69,7 +69,8 @@
       v-for="(developer, index) in developers"
       :key="index"
       id="one"
-      class="spotlight style1 bottom"
+      class="spotlight bottom inactive"
+      :class="`style${index + 1}`"
     >
       <span class="image fit main" id="dev-bg">
         <img id="devPageBg" src="@/assets/images/pic02.jpg" alt />
@@ -122,12 +123,14 @@
 </template>
 
 <script>
+import SectionObserver from "@/mixin/SectionObserver.ts"
 import developers from '@/data/developers.json'
 
 export default {
   metaInfo: {
     title: 'In person coding sessions',
   },
+  mixins: [SectionObserver],
   data() {
     return {
       developers,
