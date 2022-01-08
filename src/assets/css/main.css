@@ -3145,15 +3145,24 @@ input, select, textarea {
 		.spotlight.style1 .content {
 			border-color: #e44c65;
 		}
-
+		.spotlight.style1 {
+			background-image: url("../images/pic02.jpg");
+		}
+		
 		.spotlight.style2 .content {
 			border-color: #5480f1;
+		}
+		.spotlight.style2 {
+			background-image: url("../images/pic03.jpg");
 		}
 
 		.spotlight.style3 .content {
 			border-color: #39c088;
 		}
-
+		.spotlight.style3 {
+			background-image: url("../images/pic04.jpg");
+		}
+		
 		.spotlight.inactive .content {
 			opacity: 0;
 		}

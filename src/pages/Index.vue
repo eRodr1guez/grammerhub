@@ -141,19 +141,3 @@ export default {
   mixins: [SectionObserver]
 }
 </script>
-
-<style >
-/* .home-links a {
-  margin-right: 1rem;
-} */
-
-.spotlight.style1 {
-  background-image: url("../assets/images/pic02.jpg");
-}
-.spotlight.style2 {
-  background-image: url("../assets/images/pic03.jpg");
-}
-.spotlight.style3 {
-  background-image: url("../assets/images/pic04.jpg");
-}
-</style>
